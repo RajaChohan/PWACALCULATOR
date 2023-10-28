@@ -26,6 +26,10 @@ display.addEventListener("keypress",function(event){
 
 });
 const calculate=(btnValue)=>{
+       if(btnValue=="undefined" || btnValue==undefined)
+    {
+        return;
+    }
     display.focus();
    if(btnValue === "=" && display.value!="")
    {
